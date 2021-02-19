@@ -14,4 +14,22 @@
     <color name="red">#E44361</color>
     <color name="yellow">#FFD901</color>
     <color name="light_blue">#81B6D0</color>
+
+
+    <color name="lightgray">#ededed</color>
+    <color name="deeppurple">#7c4dff</color>
+    <color name="yello">#ffb300</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="darkblue">#23283a</color>
+    <color name="testcolorblue">#152b38</color>
+    <color name="pink">#575757</color>
+    <color name="Green">#00B451</color>
+    <color name="hintcolor">#C4000000</color>
+
+    <color name="black_overlay">#2D2FE7</color>
+
+    <color name="color_pink">#cf4bf8</color>
+    <color name="color_violet">#8813e4</color>
+    <color name="color_blue">#3d93d9</color>
+    <color name="color_green_light">#5ff0f7</color>
 </resources>

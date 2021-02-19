@@ -1,17 +1,23 @@
 package com.example.shopisthan;
 
+import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 
 public class SlideViewPagerAdapter  extends PagerAdapter {
 
@@ -49,6 +55,9 @@ public class SlideViewPagerAdapter  extends PagerAdapter {
 
 
 
+
+
+
         TextView title = view.findViewById(R.id.shopisthan);
         TextView desc = view.findViewById(R.id.desc);
 
@@ -74,14 +83,26 @@ public class SlideViewPagerAdapter  extends PagerAdapter {
                 SlideActivity.viewPager.setCurrentItem(position+2);
             }
         });
+//        btn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+////                Intent intent = new Intent(ctx,MainActivity.class);
+////                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK| Intent.FLAG_ACTIVITY_NEW_TASK);
+////                ctx.startActivity(intent);
+//
+//                AlertDialog.Builder  dialogBuilder= new AlertDialog.Builder(ctx);
+//                final View contactPopupView = getLayoutInflater().inflate(R.layout.sign_up,null);
+//                AlertDialog dialog;
+
+
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ctx,MainActivity.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK| Intent.FLAG_ACTIVITY_NEW_TASK);
-                ctx.startActivity(intent);
+            public void onClick(View v)
+            {
+                createNewContactDialog();
             }
         });
+
         next.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -144,9 +165,25 @@ public class SlideViewPagerAdapter  extends PagerAdapter {
 
 
 
+
+
         container.addView(view);
 
         return view;
+    }
+    private AlertDialog.Builder dialogBuilder;
+    private AlertDialog dialog;
+
+    private void createNewContactDialog()
+    {
+
+        dialogBuilder= new AlertDialog.Builder(ctx);
+        View myView = LayoutInflater.from(ctx).inflate(R.layout.sign_up,null);
+
+        dialogBuilder.setView(myView);
+        dialog = dialogBuilder.create();
+        dialog.setCanceledOnTouchOutside(false);
+        dialog.show();
     }
 
     @Override
