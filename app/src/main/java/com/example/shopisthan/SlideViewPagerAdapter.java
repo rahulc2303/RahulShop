@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -47,6 +49,8 @@ public class SlideViewPagerAdapter  extends PagerAdapter {
         ImageView ind2 = view.findViewById(R.id.ind2);
         ImageView ind3 = view.findViewById(R.id.ind3);
 
+
+        Animation top = AnimationUtils.loadAnimation(ctx,R.anim.top_animation);
 
 
 
@@ -129,6 +133,7 @@ public class SlideViewPagerAdapter  extends PagerAdapter {
                 desc.setText("Shopping on the way");
                 back.setVisibility(View.GONE);
                 next.setVisibility(View.VISIBLE);
+                btn.setVisibility(View.INVISIBLE);
 
                 break;
 
@@ -142,6 +147,7 @@ public class SlideViewPagerAdapter  extends PagerAdapter {
                 desc.setText("Shopping on the1231 way");
                 back.setVisibility(View.VISIBLE);
                 next.setVisibility(View.VISIBLE);
+                btn.setVisibility(View.INVISIBLE);
 
                 break;
 
@@ -155,6 +161,8 @@ public class SlideViewPagerAdapter  extends PagerAdapter {
                 desc.setText("Shopping of 14f14fn the1231 way");
                 back.setVisibility(View.VISIBLE);
                 next.setVisibility(View.GONE);
+                btn.setVisibility(View.VISIBLE);
+                btn.setAnimation(top);
                 break;
 
 
