@@ -13,6 +13,8 @@
         android:theme="@style/Theme.Shopisthan">
         <activity android:name=".Shop_register"></activity>
         <activity android:name=".user_selection" />
+        <activity android:name=".HomeActivity"
+            android:windowSoftInputMode="adjustNothing"/>
         <activity android:name=".SignInActivity" />
         <activity android:name=".signUp" />
         <activity android:name=".SlideActivity">

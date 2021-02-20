@@ -125,6 +125,7 @@ public class SlideViewPagerAdapter  extends PagerAdapter {
         {
             case  0:
                 logo.setImageResource(R.drawable.shoplogo);
+                logo.setAnimation(top);
                 ind1.setImageResource(R.drawable.selected);
                 ind2.setImageResource(R.drawable.unselected);
                 ind3.setImageResource(R.drawable.unselected);
@@ -139,6 +140,7 @@ public class SlideViewPagerAdapter  extends PagerAdapter {
 
             case 1:
                 logo.setImageResource(R.drawable.shoplogo);
+                logo.setAnimation(top);
                 ind1.setImageResource(R.drawable.unselected);
                 ind2.setImageResource(R.drawable.selected);
                 ind3.setImageResource(R.drawable.unselected);
@@ -153,6 +155,7 @@ public class SlideViewPagerAdapter  extends PagerAdapter {
 
             case 2:
                 logo.setImageResource(R.drawable.shoplogo);
+                logo.setAnimation(top);
                 ind1.setImageResource(R.drawable.unselected);
                 ind2.setImageResource(R.drawable.unselected);
                 ind3.setImageResource(R.drawable.selected);
