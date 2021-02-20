@@ -57,6 +57,7 @@ public class SlideViewPagerAdapter  extends PagerAdapter {
 
         ImageView next = view.findViewById(R.id.next);
         ImageView back = view.findViewById(R.id.back);
+
         Button btn = view.findViewById(R.id.goBtn);
 
         ind1.setOnClickListener(new View.OnClickListener() {
