@@ -1,12 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/gery"
     tools:context=".SignInActivity">
 
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="70dp">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+
+            >
 
             <RelativeLayout
                 android:layout_width="wrap_content"
@@ -89,8 +108,8 @@
                     android:layout_below="@+id/Email"
                     android:layout_marginTop="10dp"
                     android:hint="Password "
-                    app:passwordToggleEnabled="true"
-                    app:hintTextColor="#000">
+                    app:hintTextColor="#000"
+                    app:passwordToggleEnabled="false">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
@@ -109,6 +128,17 @@
                     android:background="@drawable/btn_gradient_style"
                     android:drawableLeft="@drawable/phone"
                     android:text="Sign In" />
+
+                <ProgressBar
+                    android:id="@+id/progress_circular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Password"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:visibility="invisible"
+
+                    />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -130,6 +160,7 @@
 
 
                 <com.google.android.gms.common.SignInButton
+                    android:id="@+id/googleSignBtn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/or"
@@ -137,5 +168,9 @@
 
             </RelativeLayout>
 
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
 
 </RelativeLayout>
