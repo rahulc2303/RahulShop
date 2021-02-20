@@ -57,6 +57,7 @@
         android:id="@+id/goBtn"
         android:layout_alignParentBottom="true"
         android:text="Get Started"
+        android:textColor="@color/white"
         android:textStyle="bold"
         android:textAllCaps="false"
         android:layout_centerHorizontal="true"
