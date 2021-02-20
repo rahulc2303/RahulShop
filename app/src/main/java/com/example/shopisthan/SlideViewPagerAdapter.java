@@ -47,11 +47,6 @@ public class SlideViewPagerAdapter  extends PagerAdapter {
         ImageView ind2 = view.findViewById(R.id.ind2);
         ImageView ind3 = view.findViewById(R.id.ind3);
 
-
-
-
-
-
         TextView title = view.findViewById(R.id.shopisthan);
         TextView desc = view.findViewById(R.id.desc);
 
