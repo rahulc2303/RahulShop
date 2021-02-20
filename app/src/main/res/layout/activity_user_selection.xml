@@ -38,21 +38,7 @@
         android:layout_marginTop="20dp"
         />
 
-    <ImageView
-        android:id="@+id/buysform"
-        android:layout_below="@+id/textviewtv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/buyers"
-        android:layout_marginTop="90dp"/>
 
-    <ImageView
-        android:id="@+id/usersform"
-        android:layout_below="@+id/buysform"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/users"
-        android:layout_marginTop="0dp"/>
 
     <TextView
         android:id="@+id/textView"
@@ -67,5 +53,108 @@
         android:textColor="@color/cardview_dark_background"
         android:textSize="18dp"
         android:textStyle="bold" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="90dp"
+        android:id="@+id/buysform"
+        android:layout_below="@+id/textviewtv"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="8dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="150dp">
+            <ImageView
+                android:id="@+id/bagimg"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_baseline_shopping_bag_24"
+                android:layout_marginTop="35dp" />
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/imm"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I'm"
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/bagimg"
+                android:layout_marginTop="30dp"/>
+            <TextView
+                android:layout_marginLeft="130dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buyer"
+                android:textSize="25dp"
+                android:textColor="@color/Green"
+                android:layout_marginTop="30dp"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/bagimg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I'm a buyer, and want to explore Stores and Products on shopisthan"
+                android:textSize="18dp"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_marginTop="70dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/buysform"
+        android:id="@+id/sellersform"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="8dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="150dp">
+            <ImageView
+                android:id="@+id/storeimg"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_baseline_storefront_24"
+                android:layout_marginTop="35dp" />
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/im"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I'm"
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/storeimg"
+                android:layout_marginTop="30dp"/>
+            <TextView
+                android:layout_marginLeft="130dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seller"
+                android:textSize="25dp"
+                android:textColor="@color/Green"
+                android:layout_marginTop="30dp"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/storeimg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I am a seller, and want to sell products on shopisthan"
+                android:textSize="18dp"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_marginTop="70dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
 
 </RelativeLayout>
