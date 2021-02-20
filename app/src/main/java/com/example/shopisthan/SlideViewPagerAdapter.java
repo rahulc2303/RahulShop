@@ -95,7 +95,7 @@ public class SlideViewPagerAdapter  extends PagerAdapter {
             public void onClick(View v)
             {
 
-                Intent intent = new Intent(ctx, signUp.class);
+                Intent intent = new Intent(ctx, SignInActivity.class);
                 ctx.startActivity(intent);
             }
         });

@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Shopisthan">
-        <activity android:name=".user_selection"></activity>
-        <activity android:name=".SignInActivity" />
+        <activity android:name=".user_selection"/>
+        <activity android:name=".SignInActivity"></activity>
         <activity android:name=".signUp" />
         <activity android:name=".SlideActivity">
             <intent-filter>
