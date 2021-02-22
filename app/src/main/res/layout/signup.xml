@@ -165,7 +165,6 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/btn_gradient_style"
-                    android:drawableLeft="@drawable/phone"
                     android:text="Sign Up" />
 
                 <ProgressBar
@@ -180,6 +179,8 @@
                     />
 
                 <RelativeLayout
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="3dp"
                     android:layout_below="@+id/gopopup"
@@ -193,6 +194,7 @@
                     android:layout_below="@+id/gopopup"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="19dp"
+                    android:textColor="@color/cardview_dark_background"
                     android:background="@color/white"
                     android:text="    or Sign In With    "
                     android:textSize="17dp" />
