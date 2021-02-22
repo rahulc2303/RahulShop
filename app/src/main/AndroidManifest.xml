@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.shopisthan">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,10 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Shopisthan">
-        <activity android:name=".Shop_register"></activity>
+        <activity android:name=".ShopSlideActivity"></activity>
+        <activity android:name=".Shop_register" />
         <activity android:name=".user_selection" />
-        <activity android:name=".HomeActivity"
-            android:windowSoftInputMode="adjustNothing"/>
+        <activity
+            android:name=".HomeActivity"
+            android:windowSoftInputMode="adjustNothing" />
         <activity android:name=".SignInActivity" />
         <activity android:name=".signUp" />
         <activity android:name=".SlideActivity">

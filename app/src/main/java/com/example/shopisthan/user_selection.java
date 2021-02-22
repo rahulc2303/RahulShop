@@ -34,7 +34,7 @@ public class user_selection extends AppCompatActivity {
         shopCreate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(user_selection.this,Shop_register.class);
+                Intent intent = new Intent(user_selection.this,ShopSlideActivity.class);
                 startActivity(intent);
             }
         });

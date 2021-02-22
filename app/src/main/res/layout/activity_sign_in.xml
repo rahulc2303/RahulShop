@@ -44,6 +44,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/btn_gradient_style"
+                    android:textColor="@color/white"
                     android:text="Sign In" />
 
                 <ProgressBar
@@ -141,7 +142,10 @@
                     android:layout_below="@+id/textView99"
                     android:layout_marginTop="30dp"
                     android:hint="Username or email"
-                    app:hintTextColor="#000">
+                    android:textColorHint="@color/black"
+                    app:hintTextColor="@color/black"
+                    app:boxStrokeColor="@color/green"
+                    >
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
@@ -158,7 +162,9 @@
                     android:layout_below="@+id/Email"
                     android:layout_marginTop="10dp"
                     android:hint="Password "
-                    app:hintTextColor="#000"
+                    android:textColorHint="@color/black"
+                    app:hintTextColor="@color/black"
+                    app:boxStrokeColor="@color/green"
                     app:passwordToggleEnabled="false">
 
                     <com.google.android.material.textfield.TextInputEditText

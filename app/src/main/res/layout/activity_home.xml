@@ -60,6 +60,7 @@
 <!--        app:mbn_defaultIconColor="@color/white"-->
 <!--        app:mbn_backgroundBottomColor="#3c415e"-->
 
+
 <!--        />-->
 
     <com.etebarian.meowbottomnavigation.MeowBottomNavigation

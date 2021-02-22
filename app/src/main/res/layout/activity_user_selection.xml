@@ -68,6 +68,7 @@
         app:cardCornerRadius="8dp">
         <RelativeLayout
             android:layout_width="wrap_content"
+            android:background="@color/white"
             android:layout_height="150dp">
             <ImageView
                 android:id="@+id/bagimg"
@@ -119,6 +120,7 @@
         app:cardCornerRadius="8dp">
         <RelativeLayout
             android:layout_width="wrap_content"
+            android:background="@color/white"
             android:layout_height="150dp">
             <ImageView
                 android:id="@+id/storeimg"

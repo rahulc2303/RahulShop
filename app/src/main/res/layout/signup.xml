@@ -92,7 +92,10 @@
                     android:layout_marginTop="30dp"
                     android:background="@color/white"
                     android:hint="First Name"
-                    app:hintTextColor="#000">
+                    android:textColorHint="@color/black"
+                    app:hintTextColor="@color/black"
+                    app:boxStrokeColor="@color/green"
+                    >
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
@@ -111,7 +114,10 @@
                     android:background="@color/white"
 
                     android:hint="Last Name"
-                    app:hintTextColor="#000">
+                    android:textColorHint="@color/black"
+                    app:hintTextColor="@color/black"
+                    app:boxStrokeColor="@color/green"
+                    >
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
@@ -128,7 +134,10 @@
                     android:layout_marginTop="10dp"
 
                     android:hint="Username or Email"
-                    app:hintTextColor="#000">
+                    android:textColorHint="@color/black"
+                    app:hintTextColor="@color/black"
+                    app:boxStrokeColor="@color/green"
+                    >
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
@@ -147,7 +156,10 @@
                     android:layout_below="@+id/GSTno"
                     android:layout_marginTop="10dp"
                     android:hint="Password"
-                    app:hintTextColor="#000"
+                    android:textColorHint="@color/black"
+                    app:hintTextColor="@color/black"
+                    app:boxStrokeColor="@color/green"
+
                     >
 
                     <com.google.android.material.textfield.TextInputEditText
