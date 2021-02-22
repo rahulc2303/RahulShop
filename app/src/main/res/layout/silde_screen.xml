@@ -1,98 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
     android:layout_height="match_parent">
 
 
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:src="@drawable/shoplogo"
-        android:id="@+id/shopLogo"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/shopLogo"
-        android:layout_marginTop="30dp"
-        android:text="Shopisthan"
-        android:textSize="30dp"
-        android:id="@+id/shopisthan"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/shopisthan"
-        android:text="rfgbrgfrgvu3r            urfhu h3ifh3fu hefihi hf3ifh 3ifhi3"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/desc"
-        />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/ic_back"
-        android:layout_centerVertical="true"
-        android:id="@+id/back"
-        android:layout_marginStart="10dp"
-        />
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/ic_next"
-        android:layout_centerVertical="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="10dp"
-        android:layout_marginStart="10dp"
-        android:id="@+id/next"
-        />
-
     <Button
+        android:id="@+id/goBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/goBtn"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:text="Get Started"
+        android:textAllCaps="false"
         android:textColor="@color/white"
         android:textStyle="bold"
-        android:textAllCaps="false"
-        android:layout_centerHorizontal="true"
         android:visibility="invisible"
-        />
-<RelativeLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_centerHorizontal="true"
-    android:layout_below="@id/shopisthan"
-    android:layout_marginTop="100dp"
-    >
-    <ImageView
-        android:id="@+id/ind1"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:src="@drawable/selected" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        tools:ignore="MissingConstraints" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/shopisthan"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="4dp"-->
+<!--        android:background="@color/Green"-->
+<!--        android:gravity="center"-->
+<!--        android:text="TextView "-->
+<!--        android:textColor="#fff"-->
+<!--        android:textSize="42sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+    <TextView
+        android:id="@+id/introduction_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="288dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:gravity="left"
+        android:text="TextView"
+        android:textColor="@color/Green"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:gravity="left"
+        android:text="TextView"
+        android:textColor="@color/pink"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/introduction_description" />
 
     <ImageView
-        android:id="@+id/ind2"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_toEndOf="@id/ind1"
-        android:layout_marginStart="5dp"
-        android:src="@drawable/selected" />
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:id="@+id/shopLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.619"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_width="match_parent"
+        android:layout_height="369dp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="86dp"
+        tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/ind3"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_toEndOf="@id/ind2"
-        android:layout_marginStart="5dp"
-        android:src="@drawable/selected" />
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc"
+        tools:ignore="MissingConstraints">
 
-</RelativeLayout>
+        <ImageView
+            android:id="@+id/ind1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/selected" />
+
+        <ImageView
+            android:id="@+id/ind2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/ind1"
+            android:src="@drawable/selected" />
+
+        <ImageView
+            android:id="@+id/ind3"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/ind2"
+            android:src="@drawable/selected" />
+
+    </RelativeLayout>
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

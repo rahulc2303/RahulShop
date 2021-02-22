@@ -7,14 +7,17 @@
     android:background="@color/gery"
     tools:context=".signUp">
 
+    <include layout="@layout/custom_toolbar"
+        android:id="@+id/mytoolbarhome"
+        />
+
 
     <androidx.cardview.widget.CardView
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
         app:cardCornerRadius="10dp"
         app:cardElevation="70dp">
 

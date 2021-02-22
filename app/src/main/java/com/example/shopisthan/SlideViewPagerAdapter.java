@@ -56,11 +56,10 @@ public class SlideViewPagerAdapter  extends PagerAdapter {
 
 
 
-        TextView title = view.findViewById(R.id.shopisthan);
+        TextView title = view.findViewById(R.id.introduction_description);
         TextView desc = view.findViewById(R.id.desc);
 
-        ImageView next = view.findViewById(R.id.next);
-        ImageView back = view.findViewById(R.id.back);
+
 
         Button btn = view.findViewById(R.id.goBtn);
 
@@ -103,24 +102,6 @@ public class SlideViewPagerAdapter  extends PagerAdapter {
                 ctx.startActivity(intent);
             }
         });
-
-        next.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-
-                SlideActivity.viewPager.setCurrentItem(position+1);
-            }
-        });
-
-        back.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v) {
-                SlideActivity.viewPager.setCurrentItem(position - 1);
-            }
-        });
         switch (position)
         {
             case  0:
@@ -131,9 +112,8 @@ public class SlideViewPagerAdapter  extends PagerAdapter {
                 ind3.setImageResource(R.drawable.unselected);
 
                 title.setText("Shopisthan");
-                desc.setText("Shopping on the way");
-                back.setVisibility(View.GONE);
-                next.setVisibility(View.VISIBLE);
+                desc.setText("Explore New Store,\nFollow Your Favorite\nStore.");
+
                 btn.setVisibility(View.INVISIBLE);
 
                 break;
@@ -145,10 +125,8 @@ public class SlideViewPagerAdapter  extends PagerAdapter {
                 ind2.setImageResource(R.drawable.selected);
                 ind3.setImageResource(R.drawable.unselected);
 
-                title.setText("Shopisthan 1231");
-                desc.setText("Shopping on the1231 way");
-                back.setVisibility(View.VISIBLE);
-                next.setVisibility(View.VISIBLE);
+                title.setText("Shopisthan");
+                desc.setText("Sell Products From\nAnywhere, Home,\nStore Or Multilocation.");
                 btn.setVisibility(View.INVISIBLE);
 
                 break;
@@ -160,14 +138,11 @@ public class SlideViewPagerAdapter  extends PagerAdapter {
                 ind2.setImageResource(R.drawable.unselected);
                 ind3.setImageResource(R.drawable.selected);
 
-                title.setText("Shopisthan 3e 1231");
-                desc.setText("Shopping of 14f14fn the1231 way");
-                back.setVisibility(View.VISIBLE);
-                next.setVisibility(View.GONE);
+                title.setText("Shopisthan");
+                desc.setText("Enjoy Window\nShopping Or Build\nYour Community By\nSelling Best Products");
                 btn.setVisibility(View.VISIBLE);
                 btn.setAnimation(top);
                 break;
-
 
         }
 
