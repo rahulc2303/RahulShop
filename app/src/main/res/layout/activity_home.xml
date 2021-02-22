@@ -1,42 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:id="@+id/drawer"
+    android:background="@color/white"
     tools:context=".HomeActivity">
 
-    <RelativeLayout
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:id="@+id/ra1"-->
+<!--        >-->
+<!--        <fragment-->
+<!--            android:id="@+id/fragment_container"-->
+<!--            android:name="androidx.navigation.fragment.NavHostFragment"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            app:defaultNavHost="true"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:navGraph="@navigation/navigation"-->
+<!--            android:layout_above="@id/bottomNavigationView"-->
+<!--            />-->
+
+<!--        <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--            android:id="@+id/bottomNavigationView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:background="@color/purple_700"-->
+<!--            app:itemIconTint="@color/white"-->
+<!--            app:itemTextColor="@color/white"-->
+<!--            app:labelVisibilityMode="selected"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            app:menu="@menu/bottom_new_nav"-->
+
+<!--            />-->
+
+<!--    </RelativeLayout>-->
+
+
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/ra1"
-        >
-        <fragment
-            android:id="@+id/fragment_container"
-            android:name="androidx.navigation.fragment.NavHostFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:defaultNavHost="true"
-            app:layout_constraintTop_toTopOf="parent"
-            app:navGraph="@navigation/navigation"
-            android:layout_above="@id/bottomNavigationView"
-            />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/frame_layout"
+        />
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottomNavigationView"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@color/purple_700"
-            app:itemIconTint="@color/white"
-            app:itemTextColor="@color/white"
-            app:labelVisibilityMode="selected"
-            android:layout_alignParentBottom="true"
-            app:menu="@menu/bottom_new_nav"
+<!--    <com.etebarian.meowbottomnavigation.MeowBottomNavigation-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/bottom_navigation"-->
+<!--        app:mbn_circleColor="@color/white"-->
+<!--        app:mbn_selectedIconColor="@color/blue"-->
+<!--        app:mbn_countTextColor="@color/white"-->
+<!--        app:mbn_countBackgroundColor="@color/Green"-->
+<!--        app:mbn_defaultIconColor="@color/white"-->
+<!--        app:mbn_backgroundBottomColor="#3c415e"-->
 
-            />
+<!--        />-->
 
-    </RelativeLayout>
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+            app:mbn_circleColor="@color/Green"
+            app:mbn_selectedIconColor="@color/white"
+            app:mbn_countTextColor="@color/black"
+            app:mbn_countBackgroundColor="@color/Green"
+            app:mbn_defaultIconColor="@color/white"
+            app:mbn_backgroundBottomColor="@color/Green"
 
-</androidx.drawerlayout.widget.DrawerLayout>
+        />
+
+</LinearLayout>

@@ -10,15 +10,28 @@ import android.widget.ImageView;
 
 public class user_selection extends AppCompatActivity {
 
-    CardView shopcreate;
+    CardView shopCreate;
+    CardView user;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_selection);
 
-        shopcreate = findViewById(R.id.sellersform);
-        shopcreate.setOnClickListener(new View.OnClickListener() {
+        shopCreate = findViewById(R.id.sellersform);
+        user = findViewById(R.id.buysform);
+
+        user.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(user_selection.this,HomeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        shopCreate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(user_selection.this,Shop_register.class);
