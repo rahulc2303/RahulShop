@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,13 +7,17 @@
     android:background="@color/gery"
     tools:context=".SignInActivity">
 
-    <androidx.cardview.widget.CardView
+    <include layout="@layout/custom_toolbar"
+        android:id="@+id/mytoolbarhome"
+        />
 
+
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
         app:cardCornerRadius="10dp"
         app:cardElevation="70dp">
 
@@ -33,6 +35,34 @@
                 android:background="@color/white"
                 android:orientation="vertical"
                 android:padding="10dp">
+
+                <Button
+                    android:id="@+id/gopopup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Password"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_gradient_style"
+                    android:text="Sign In" />
+
+                <ProgressBar
+                    android:id="@+id/progress_circular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Password"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:visibility="invisible"
+
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_below="@+id/gopopup"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/hintcolor" />
 
                 <TextView
                     android:id="@+id/close"
@@ -58,17 +88,19 @@
                     android:textSize="35sp"
                     android:textStyle="bold" />
 
+
                 <TextView
                     android:id="@+id/textView8"
                     android:layout_width="155dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/textView7"
                     android:layout_marginTop="20dp"
-                    android:gravity="center"
-                    android:text="New User "
+                    android:gravity="right"
+                    android:text="New user? "
                     android:textColor="#C4000000"
                     android:textSize="20sp"
                     android:textStyle="bold" />
+
 
                 <TextView
                     android:id="@+id/textView99"
@@ -78,10 +110,28 @@
                     android:layout_marginTop="20dp"
                     android:layout_toRightOf="@+id/textView8"
                     android:gravity="left"
-                    android:text=" Creat an Account"
+                    android:text="Creat an Account"
                     android:textColor="@color/Green"
                     android:textSize="20sp"
                     android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/or"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gopopup"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="19dp"
+                    android:background="@color/white"
+                    android:text="    or Sign In With    "
+                    android:textSize="17dp" />
+
+                <com.google.android.gms.common.SignInButton
+                    android:id="@+id/googleSignBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/or"
+                    android:layout_marginTop="40dp" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/Email"
@@ -116,55 +166,6 @@
                         android:layout_height="wrap_content"
                         android:inputType="textPassword" />
                 </com.google.android.material.textfield.TextInputLayout>
-
-
-                <Button
-                    android:id="@+id/gopopup"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/Password"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/btn_gradient_style"
-                    android:drawableLeft="@drawable/phone"
-                    android:text="Sign In" />
-
-                <ProgressBar
-                    android:id="@+id/progress_circular"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/Password"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="10dp"
-                    android:visibility="invisible"
-
-                    />
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="3dp"
-                    android:layout_below="@+id/gopopup"
-                    android:layout_marginTop="30dp"
-                    android:background="@color/hintcolor" />
-
-                <TextView
-                    android:id="@+id/or"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/gopopup"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="19dp"
-                    android:background="@color/white"
-                    android:text="    or Sign In With    "
-                    android:textSize="17dp" />
-
-
-                <com.google.android.gms.common.SignInButton
-                    android:id="@+id/googleSignBtn"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/or"
-                    android:layout_marginTop="40dp" />
 
             </RelativeLayout>
 
